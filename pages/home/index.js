@@ -1,13 +1,13 @@
 import React from 'react'
 
 const index = () => {
-  return (
-    <div>
+    return (
+        <div>
 
-<h2> Home files </h2>
+            <h2> Home files </h2>
 
-    </div>
-  )
+        </div>
+    )
 }
 
 export default index
