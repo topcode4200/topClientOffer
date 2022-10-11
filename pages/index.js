@@ -1,9 +1,10 @@
+import Banner from "../components/Banner/Banner";
 
 
-const Home = ()=> {
+const Home = () => {
   return (
     <div>
-      <h2 class="text-3xl">home</h2>
+      <Banner />
     </div>
   )
 }
