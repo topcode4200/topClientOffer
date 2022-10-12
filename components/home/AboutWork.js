@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 
-const About = () => {
+const AboutWork = () => {
   return (
     <section>
-      <div className="about-component">
+      <div className="about-component container">
         <h1>About Us</h1>
         <p>
           Welcome to the world of TopClientOffer. We are one of the leading CPA
@@ -24,8 +24,8 @@ const About = () => {
           for an open business we will be an ideal platform for you.
         </p>
       </div>
-      <div className="work-component">
-        <div className="col-span-2">
+      <div className="work-component container">
+        <div>
           <h1>How It Works</h1>
           <p className="mt-2 mb-5">
             Take advantage of all favorite dating offers in one link
@@ -38,10 +38,33 @@ const About = () => {
             or not.They are using fraud marks by detect fraud
           </p>
         </div>
-        <Image width={400} height={300} src="/howItWork.png" alt="" />
+        <div className="flex justify-end items-center">
+          <div className="w-[482px] h-[294px">
+            <Image width={500} height={300} src="/howItWork.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="score-board-container container">
+        <div className="flex justify-center">
+          <div className="f-div">
+            <h4>Fraud analytics:</h4>
+          </div>
+        </div>
+        <div>
+          <h3>40+</h3>
+          <p>is low risk score</p>
+        </div>
+        <div>
+          <h3>75+</h3>
+          <p>is suspicious</p>
+        </div>
+        <div>
+          <h3>85+</h3>
+          <p>is really high risk</p>
+        </div>
       </div>
     </section>
   );
 };
 
-export default About;
+export default AboutWork;

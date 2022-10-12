@@ -1,11 +1,17 @@
-import About from "../components/home/AboutWork";
+import AboutWork from "../components/home/AboutWork";
 import Banner from "../components/home/Banner";
+import BodyExtraMenu from "../components/home/BodyExtraMenu";
+import Partners from "../components/home/Partners";
+import WhatMakeUsDifferent from "../components/home/WhatMakeUsDifferent";
 
 const Home = () => {
   return (
     <div>
       <Banner />
-      <About />
+      <AboutWork />
+      <WhatMakeUsDifferent />
+      <BodyExtraMenu />
+      <Partners />
     </div>
   );
 };

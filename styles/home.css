@@ -1,12 +1,19 @@
 @tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .container {
+    @apply py-5 md:py-0 font-sans px-5 xl:px-28 lg:px-20 md:px-10 text-xl;
+  }
+}
 
 @layer components {
   /* -----------------------
     banner component start
   -------------------------- */
   .banner-container {
-    @apply py-5 md:py-0 md:flex gap-5 font-sans px-5 lg:px-28 md:px-10 md:h-[400px] items-center justify-between 
-    text-secondary;
+    @apply py-5 md:py-0 md:flex gap-5 font-sans px-5 xl:px-28 lg:px-20 md:px-10 md:h-[400px] items-center justify-between 
+    text-secondary mb-36;
   }
   .banner-container h1 {
     @apply text-4xl md:text-6xl lg:text-7xl font-semibold md:mb-4 text-primary;
@@ -27,10 +34,6 @@
   /* -----------------------
     about and how it work components start
   -------------------------- */
-  .about-component,
-  .work-component {
-    @apply py-5 md:py-0 font-sans px-5 text-xl lg:px-28 md:px-10 mt-10 md:mt-20;
-  }
   .about-component h1,
   .work-component h1 {
     @apply text-primary text-5xl font-semibold mb-2;
@@ -39,12 +42,69 @@
     @apply text-secondary text-justify text-lg;
   }
   .work-component {
-    @apply grid grid-cols-3 gap-10;
+    @apply space-y-5 md:space-y-0 md:grid grid-cols-2 gap-24 text-justify mt-36;
+  }
+  /* score board */
+  .score-board-container {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-10 mt-12 xl:gap-20 items-center;
+  }
+  .score-board-container h3 {
+    @apply font-bold text-3xl md:text-4xl lg:text-5xl text-center mb-3;
+  }
+  .score-board-container p {
+    @apply text-gray-600 font-medium text-center;
+  }
+  .score-board-container .f-div {
+    @apply flex justify-center items-center rounded-full h-32 w-32 text-center bg-white;
+  }
+  .score-board-container .f-div h4 {
+    @apply text-primary text-2xl font-medium py-12 px-5;
+  }
+  .score-board-container div {
+    @apply rounded-md h-full bg-gray-50 px-4 py-7 flex flex-col justify-center items-center;
+  }
+  .score-board-container div:nth-child(1) {
+    @apply bg-white;
+  }
+
+  /* ---------------------------------
+    what make us different component
+  ------------------------------------ */
+  .whatMakeUsDifferent-container h1 {
+    @apply text-5xl font-semibold mb-16 mt-40 text-secondary text-center;
+  }
+  .whatMakeUsDifferent-container .item-wrapper {
+    @apply grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-base text-justify;
+  }
+  .whatMakeUsDifferent-container .item-wrapper .item {
+    @apply p-6 bg-[#FFF9F9] backdrop-blur-lg rounded-2xl;
+  }
+  .whatMakeUsDifferent-container .item-wrapper .item:nth-child(2),
+  .whatMakeUsDifferent-container .item-wrapper .item:nth-child(5) {
+    @apply bg-[#FAFAFA];
+  }
+
+  /*------------------------------ 
+    body extra menu bar component 
+  --------------------------------*/
+  .body-extra-menu-container {
+    @apply mb-36;
+  }
+  .body-extra-menu-container nav {
+    @apply flex flex-wrap justify-between mt-36 mb-12 bg-secondary text-white rounded-lg;
+  }
+  .body-extra-menu-container nav button {
+    @apply uppercase font-semibold text-base p-3 rounded-lg;
   }
 }
 
 .banner-container h1,
 .about-component h1,
-.work-component h1 {
+.work-component h1,
+.whatMakeUsDifferent-container h1 {
   font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+.score-board-container .f-div {
+  box-shadow: rgb(255 0 0 / 33%) 1px 2px 15px;
 }
