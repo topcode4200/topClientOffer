@@ -23,7 +23,6 @@ const Footer = () => {
                                 <li>
                                     <a class="">CPA Offers</a>
                                 </li>
-                              
                             </nav>
                         </div>
                         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
