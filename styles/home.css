@@ -1,7 +1,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
   /* -----------------------
     banner component start
@@ -11,7 +10,7 @@
     text-secondary mb-36;
   }
   .banner-container h1 {
-    @apply text-4xl md:text-6xl lg:text-7xl font-semibold md:mb-4 text-primary;
+    @apply text-4xl font-balloVai md:text-6xl lg:text-7xl font-semibold md:mb-4 text-primary;
   }
   .banner-container .button-container {
     @apply flex gap-3 mt-8 md:mt-14;
@@ -31,7 +30,7 @@
   -------------------------- */
   .about-component h1,
   .work-component h1 {
-    @apply text-primary text-5xl font-semibold mb-2;
+    @apply text-primary font-balloVai text-5xl font-semibold mb-2;
   }
   .about-component p {
     @apply text-secondary text-justify text-lg;
@@ -66,7 +65,7 @@
     what make us different component
   ------------------------------------ */
   .whatMakeUsDifferent-container h1 {
-    @apply text-5xl font-semibold mb-16 mt-40 text-secondary text-center;
+    @apply text-5xl font-semibold font-balloVai mb-16 mt-40 text-secondary text-center;
   }
   .whatMakeUsDifferent-container .item-wrapper {
     @apply grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-base text-justify;
@@ -92,24 +91,15 @@
     @apply uppercase font-semibold text-base p-3 rounded-lg;
   }
 
-
   /* ---------------------
    partner component
   --------------------- */
-  .parter-container{
-    @apply mb-36
+  .parter-container {
+    @apply mb-36;
   }
-  .parter-container h1{
-    @apply text-4xl text-center mb-9 font-semibold
+  .parter-container h1 {
+    @apply text-4xl text-center font-balloVai mb-9 font-semibold;
   }
-}
-
-.banner-container h1,
-.about-component h1,
-.work-component h1,
-.whatMakeUsDifferent-container h1,
-.parter-container h1 {
-  font-family: "Baloo Bhaijaan 2", cursive;
 }
 
 .score-board-container .f-div {

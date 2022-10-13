@@ -1,3 +1,5 @@
+import JoinUs from "../components/common/JoinUs";
+import NewsLetter from "../components/common/NewsLetter";
 import AboutWork from "../components/home/AboutWork";
 import Banner from "../components/home/Banner";
 import BodyExtraMenu from "../components/home/BodyExtraMenu";
@@ -12,6 +14,8 @@ const Home = () => {
       <WhatMakeUsDifferent />
       <BodyExtraMenu />
       <Partners />
+      <JoinUs />
+      <NewsLetter />
     </div>
   );
 };

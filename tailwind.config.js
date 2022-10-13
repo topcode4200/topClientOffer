@@ -9,6 +9,9 @@ module.exports = {
         primary: "#F22B37",
         secondary: "#121920",
       },
+      fontFamily: {
+        balloVai: ["'Baloo Bhaijaan 2'", "cursive"],
+      },
     },
   },
   plugins: [],

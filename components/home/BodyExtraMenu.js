@@ -54,7 +54,7 @@ const BodyExtraMenu = () => {
       <nav>
         {menus.map((item) => (
           <button
-            className={menu === item.id && "bg-primary"}
+            className={menu === item.id ? "bg-primary" : ""}
             onClick={() => setMenu(item.id)}
             key={item.id}
           >
