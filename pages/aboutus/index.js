@@ -16,7 +16,7 @@ const AboutUs = () => {
 
       {/* hero sections  */}
       <section className="hero-section">
-        <p className="col-span-2">
+        <p className="lg:col-span-2">
           Welcome to the world of TopClientOffer. We are one of the leading CPA
           affiliate networks in the world. Our affiliate managers are well
           experienced and have wide knowledge on business as well as affiliate
