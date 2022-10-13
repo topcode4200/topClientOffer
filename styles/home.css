@@ -1,11 +1,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .container {
-    @apply py-5 md:py-0 font-sans px-5 xl:px-28 lg:px-20 md:px-10 text-xl;
-  }
-}
 
 @layer components {
   /* -----------------------
@@ -96,12 +91,24 @@
   .body-extra-menu-container nav button {
     @apply uppercase font-semibold text-base p-3 rounded-lg;
   }
+
+
+  /* ---------------------
+   partner component
+  --------------------- */
+  .parter-container{
+    @apply mb-36
+  }
+  .parter-container h1{
+    @apply text-4xl text-center mb-9 font-semibold
+  }
 }
 
 .banner-container h1,
 .about-component h1,
 .work-component h1,
-.whatMakeUsDifferent-container h1 {
+.whatMakeUsDifferent-container h1,
+.parter-container h1 {
   font-family: "Baloo Bhaijaan 2", cursive;
 }
 

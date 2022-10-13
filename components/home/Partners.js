@@ -3,7 +3,7 @@ import React from "react";
 
 const Partners = () => {
   return (
-    <div className="container">
+    <div className="parter-container container">
       <h1>Trusted Partner</h1>
       <Image width={2800} height={400} src="/partners.png" alt="" />
     </div>
