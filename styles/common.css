@@ -1,6 +1,39 @@
 @tailwind components;
 
 @layer components {
+  /*------------------
+ header component
+-------------------- */
+  .header-container {
+    @apply xl:px-10 flex justify-between items-center sticky top-0 z-50;
+  }
+  .header-container .menu-wrapper {
+    @apply hidden space-x-5 uppercase text-secondary xl:flex items-center;
+  }
+  .header-container .menu-wrapper .btn {
+    @apply rounded-md border-2 px-4 py-2;
+  }
+  .header-container .menu-wrapper .menu-item,
+  .menu-responsive-wrapper .menu-item {
+    @apply relative;
+  }
+  .submenus-wrapper {
+    @apply flex flex-col absolute top-full left-0 bg-primary text-white
+     py-4 rounded-b-md z-50 w-full;
+  }
+  .submenus-wrapper a {
+    @apply hover:bg-red-400 px-2 py-1;
+  }
+
+  .menu-responsive-wrapper {
+    @apply absolute top-0 right-0 pt-16 pl-10 pr-16 bg-white h-[100vh] 
+    space-y-5 xl:hidden;
+  }
+  .close-btn {
+    @apply absolute top-3 right-6 text-2xl rounded-full hover:bg-gray-200
+     h-10 w-10 flex justify-center items-center text-secondary;
+  }
+
   /* ------------------
         join component
     ----------------- */
@@ -62,4 +95,7 @@
 .news-letter-container .wrapper {
   background-image: url("/nueslater.png");
   background-repeat: no-repeat;
+}
+.header-container .menu-wrapper .submenus-wrapper {
+  box-shadow: rgb(255 0 0 / 33%) 1px 2px 15px;
 }

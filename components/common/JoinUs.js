@@ -2,10 +2,10 @@ import React from "react";
 
 const JoinUs = () => {
   return (
-    <section class="join-component">
+    <section className="join-component">
       <h2>JOIN US!</h2>
       <div className="wrapper-container">
-        <div class=" lg:max-w-sm my-10 ">
+        <div className=" lg:max-w-sm my-10 ">
           <h2>AFFILIATE</h2>
           <p className="my-4">
             Join Us to get exclusive direct offers & make most out of your
@@ -14,7 +14,7 @@ const JoinUs = () => {
           </p>
           <button className="bg-white text-secondary">JOIN NOW!</button>
         </div>
-        <div class="lg:max-w-sm text-center">
+        <div className="lg:max-w-sm text-center">
           <h2>ADVERTISER</h2>
           <p className="my-4">
             A performance based network of top affiliates which understands your
