@@ -12,7 +12,7 @@ const Accordium = ({ heading, text }) => {
     >
       <button>
         <span>{heading}</span>
-        <div className="text-gray-500 pr-5 text-lg">
+        <div className="text-gray-500 md:pr-5 text-lg">
           {showCollups ? (
             <FontAwesomeIcon icon={faCircleMinus} />
           ) : (

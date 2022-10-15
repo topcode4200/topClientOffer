@@ -61,8 +61,8 @@
     @apply text-white mt-32;
   }
   .news-letter-container .wrapper {
-    @apply flex justify-center items-center  py-24 px-24 w-full md:w-2/3 
-    mx-auto bg-cover bg-center lg:bg-contain rounded-lg;
+    @apply flex justify-center items-center  py-24 px-24 w-full lg:w-2/3 
+    lg:mx-auto bg-cover bg-center lg:bg-contain rounded-lg;
   }
   .news-letter-container .wrapper .input {
     @apply bg-[#ffffff33] w-full outline-none px-5 py-4 rounded-md my-6;

@@ -11,7 +11,7 @@ import NewsLetter from "../components/common/NewsLetter";
 const FAQ = () => {
   return (
     <div className="faq-container">
-      <div className="bg-image-wrapper header">
+      <div className="bg-image-wrapper header font-balloVai">
         <div className="space-y-3">
           <h2 className="text-5xl font-bold">FAQ</h2>
           <h3 className="text-4xl font-medium">Frequetly asked questions</h3>

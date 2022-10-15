@@ -1,0 +1,12 @@
+@tailwind components;
+
+@layer components {
+  .news-container .header h2 {
+    @apply text-5xl font-bold font-balloVai;
+  }
+}
+
+.news-container .header {
+  background-image: url("/newsfeed.png");
+  background-repeat: no-repeat;
+}
