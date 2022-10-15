@@ -1,0 +1,22 @@
+@tailwind components;
+
+@layer components {
+  .faq-container .header input {
+    @apply px-5 py-2 rounded outline-none text-black bg-[#eeeeee65];
+  }
+  .faq-container .header button {
+    @apply px-5 py-2 bg-primary rounded ml-3 mt-5;
+  }
+  .faq-wrapper {
+    @apply mt-28 w-3/4 mx-auto space-y-5;
+  }
+  .faq-wrapper h2 {
+    @apply text-3xl font-semibold bg-primary py-2 px-5 font-balloVai text-white 
+    rounded mb-5;
+  }
+}
+
+.faq-container .header {
+  background-image: url("/faqpng.png");
+  background-repeat: no-repeat;
+}

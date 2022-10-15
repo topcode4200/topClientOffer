@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCaretDown,
@@ -8,8 +8,9 @@ import {
   faClose,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Header = ({ bgColor }) => {
+const Header = () => {
   const [showSub, setShowSub] = useState(null);
+  const [bgColor, setBgColor] = useState(null);
   const [showSideMenu, setShowSideMenu] = useState(false);
 
   const menus = [
@@ -40,20 +41,34 @@ const Header = ({ bgColor }) => {
         { txt: "Blog", href: "news" },
         { txt: "offers", href: "news" },
         { txt: "Affiliate Tips", href: "news" },
-        { txt: "FAQ", href: "news" },
+        { txt: "FAQ", href: "faq" },
       ],
     },
   ];
 
+  useEffect(() => {
+    let unsub = false;
+    if (!unsub) {
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 80) {
+          setBgColor("bg-white shadow-md");
+        } else setBgColor(null);
+      });
+    }
+    return () => (unsub = true);
+  }, []);
+
   return (
-    <header className={"header-container " + bgColor}>
-      <Image
-        className="object-contain"
-        width={250}
-        height={50}
-        src="/logo.png"
-        alt="logo"
-      />
+    <header className={`header-container ${bgColor || ""}`}>
+      <Link href={"/"}>
+        <Image
+          className="object-contain cursor-pointer"
+          width={250}
+          height={50}
+          src="/logo.png"
+          alt="logo"
+        />
+      </Link>
 
       {/* for window  */}
       <div className="menu-wrapper">
@@ -62,6 +77,7 @@ const Header = ({ bgColor }) => {
             onMouseEnter={() => setShowSub(i)}
             onMouseLeave={() => setShowSub(null)}
             className="menu-item"
+            key={i}
           >
             <Link href={menu.href} key={i}>
               {menu.txt}
@@ -126,6 +142,7 @@ const Header = ({ bgColor }) => {
             onMouseEnter={() => setShowSub(i)}
             onMouseLeave={() => setShowSub(null)}
             className="menu-item"
+            key={i}
           >
             <Link href={menu.href} key={i}>
               {menu.txt}

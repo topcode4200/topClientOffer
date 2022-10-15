@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import JoinUs from "../../components/common/JoinUs";
-import NewsLetter from "../../components/common/NewsLetter";
+import JoinUs from "../components/common/JoinUs";
+import NewsLetter from "../components/common/NewsLetter";
 
 const AboutUs = () => {
   return (
     <div className="aboutus-container">
       {/* main banner */}
-      <div className="header">
+      <div className="bg-image-wrapper header">
         <div>
           <h2>About us</h2>
           <p>Everything you need to know about our values and achievements</p>
